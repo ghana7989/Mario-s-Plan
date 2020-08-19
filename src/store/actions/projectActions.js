@@ -1,10 +1,24 @@
 export const createProject = (project) => {
-    return (dispatch, getState) => {
+    // We get extraArguments from index.js via thunk in this function
+    return (dispatch, getState, extraArguments) => {
+        const { getFirebase, getFirestore } = extraArguments
+        const firestore = getFirestore();
         // Some Async Function Call
-        
-        dispatch({
-            type: "CREATE_PROJECT",
-            project: project
+        firestore.collection("projects").add({
+            ...project,
+            authorFirstName: "Bull",
+            authorLastName: "Pitta",
+            authorId: 8574852,
+            createdAt: new Date()
+        }).then(() => {
+            dispatch({
+                type: "CREATE_PROJECT",
+                project: project
+            })
+        }).catch(err => {
+            dispatch(
+                { type: "CREATE_PROJECT_ERROR", err }
+            )
         })
     }
 }
