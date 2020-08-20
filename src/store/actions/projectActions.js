@@ -1,7 +1,7 @@
 export const createProject = (project) => {
     // We get extraArguments from index.js via thunk in this function
     return (dispatch, getState, extraArguments) => {
-        const { getFirebase, getFirestore } = extraArguments
+        const { getFirestore } = extraArguments
         const firestore = getFirestore();
         // Some Async Function Call
         firestore.collection("projects").add({
