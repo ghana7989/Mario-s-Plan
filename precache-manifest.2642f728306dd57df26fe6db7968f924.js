@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "670390e5f2321949f471224c3a4c8bb1",
+    "revision": "317573f255fd54b947bc021cc568bcdd",
     "url": "/Mario-s-Plan/index.html"
   },
   {
-    "revision": "11090a0afe34eae300e7",
+    "revision": "34d08482f56c41432c6e",
     "url": "/Mario-s-Plan/static/css/main.0de02ea7.chunk.css"
   },
   {
-    "revision": "05745b5021357d565548",
-    "url": "/Mario-s-Plan/static/js/2.45440830.chunk.js"
+    "revision": "230eee8171231a5c1216",
+    "url": "/Mario-s-Plan/static/js/2.0ca3fc65.chunk.js"
   },
   {
-    "revision": "d0b13a04dd0dc4c851ad16fad1cc6f51",
-    "url": "/Mario-s-Plan/static/js/2.45440830.chunk.js.LICENSE.txt"
+    "revision": "d56f7d70e49a582c3cb88e84fa36367e",
+    "url": "/Mario-s-Plan/static/js/2.0ca3fc65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "11090a0afe34eae300e7",
-    "url": "/Mario-s-Plan/static/js/main.e6c39028.chunk.js"
+    "revision": "34d08482f56c41432c6e",
+    "url": "/Mario-s-Plan/static/js/main.1b0a543e.chunk.js"
   },
   {
     "revision": "aac2376d054a86fc1595",

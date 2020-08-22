@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Mario-s-Plan/precache-manifest.eb89d48e5b4120de93242ef7536849b3.js"
+  "/Mario-s-Plan/precache-manifest.2642f728306dd57df26fe6db7968f924.js"
 );
 
 self.addEventListener('message', (event) => {
