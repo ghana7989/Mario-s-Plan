@@ -11,6 +11,7 @@ function ProjectDetails(props) {
         return <Redirect to="/signin" />
     }
     if (project) {
+        console.log(props.project.createdAt)
         return (
             <div className="container section project-details">
                 <div className="card z-depth-0">

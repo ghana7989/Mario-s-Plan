@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { signOut } from "../../store/actions/authActions"
 
 const SignedInLinks = (props) => {
-
+// firebase.profile.initials
     return (
         <ul className="right">
             <li>
@@ -15,7 +15,7 @@ const SignedInLinks = (props) => {
                 <a onClick={props.signOut} href="/signin">Log Out</a>
             </li>
             <li>
-                <NavLink to="/" className="btn btn-floating pink lighten-1">GG</NavLink>
+                <NavLink to="/" className="btn btn-floating pink lighten-1">{props.inits}</NavLink>
             </li>
         </ul>
     )

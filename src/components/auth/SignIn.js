@@ -48,11 +48,11 @@ class SignIn extends Component {
                             Login
                         </button>
                     </div>
-                    <div className="red-text center">
-                        {
-                            authError ? <p>{authError}</p> : null
-                        }
-                    </div>
+                        <div className="red-text center">
+                            {
+                                authError ? <p>{authError}</p> : null
+                            }
+                        </div>
                 </form>
             </div>
 

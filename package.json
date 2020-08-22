@@ -1,9 +1,10 @@
 {
+  "homepage": "http://ghana7989.github.io/Mario-s-Plan",
   "name": "marioplan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "firebase": "^7.18.0",
+    "firebase": "^7.19.0",
     "react": "^16.13.1",
     "react-dom": ">=16.13.1",
     "react-redux": "^7.2.1",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -32,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

@@ -19,11 +19,16 @@ const store = createStore(rootReducer,
         reduxFirestore(firebase, fbConfig),
     )
 )
-const ReactReduxFirebase = {
+const ReactReduxFirebaseConfig = {
+
+    userProfile: "users",
+    useFirestoreForProfile: true
+}
+const ReactReduxFirebaseProps = {
     firebase,
-    config: fbConfig,
+    config: ReactReduxFirebaseConfig,
     dispatch: store.dispatch,
-    createFirestoreInstance
+    createFirestoreInstance,
 }
 function AuthIsLoaded({ children }) {
     const auth = useSelector(state => state.firebase.auth)
@@ -33,7 +38,7 @@ function AuthIsLoaded({ children }) {
 
 ReactDOM.render(
     <Provider store={store}>
-        <ReactReduxFirebaseProvider {...ReactReduxFirebase}>
+        <ReactReduxFirebaseProvider {...ReactReduxFirebaseProps}>
             <AuthIsLoaded>
                 <App />
             </AuthIsLoaded>
